@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+    body {
+font-family: "MGroena2018 Circular Medium Web",arial,sans-serif;
+color: #2a2a2a;
+font-size: 1em;
+line-height: 1.25;
+}
+
+
+
+.big-image {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("img/gard.jpg");
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay img {
+  width: 400px;
+  height: auto;
+  margin: 0 0 20px;
+}
+
+.overlay p {
+  font-family: "MGroena2018 Circular Book Web",arial,sans-serif;
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.5em;
+}
+
+.image-box {
+  width: 400px;
+  margin-left: 30%;
+}
+
+.myButton {
+  background-color:#transparent;
+  border: 1px solid #00C554;
+  border-radius:3px;
+  display:inline-block;
+  color:#ffffff;
+  font-size:17px;
+  padding:10px 23px;
+  text-decoration:none;
+  margin-top: 20px;
+}
+.myButton:hover {
+  background-color:#00C554;
+  color: #ffff;
+  text-decoration: none;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+#vids {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+
+#vids a:first-of-type {
+  margin-bottom: 5px;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+<div class="big-image">
+  <div class="overlay">
+    <div class="image-box">
+    <img src="img/tank_om.png">
+    <p>När samhället skakas om och människor förlorar både försörjning och trygghet så behöver vi stå starka. Det är mycket som har förändrats. Att rädda liv, hälsa och ekonomi kräver akuta insatser, och världen efter corona kommer inte vara densamma som innan.</p>
+    <a href="#" class="myButton">Men vi behöver också tänka om.</a>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div id="vids">
+  <a href="https://youtu.be/N7W-S4JhMXY" target="_blank">
+    Build An Image Slider With React Hooks
+  </a>
+
+  <a href="https://www.youtube.com/watch?v=GZ4d3HEn9zg" target="_blank">
+    Code A Thumbnail Gallery With React
+  </a>
+</div>
+
+
+
+
+</body>
+</html>
