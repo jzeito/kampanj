@@ -4,11 +4,8 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Ta bort title och meta vid deploy-->
-
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
@@ -45,7 +42,7 @@ line-height: 1.25;
   flex-direction: column;
 }
 
-.overlay img {
+.logga {
   width: 400px;
   height: auto;
   margin: 0 0 20px;
@@ -63,38 +60,11 @@ line-height: 1.25;
   margin-left: 30%;
 }
 
-.myButton {
-  background-color:#transparent;
-  border: 1px solid #00C554;
-  border-radius:3px;
-  display:inline-block;
-  color:#ffffff;
-  font-size:17px;
-  padding:10px 23px;
-  text-decoration:none;
-  margin-top: 20px;
-}
-.myButton:hover {
-  background-color:#00C554;
-  color: #ffff;
-  text-decoration: none;
-}
-.myButton:active {
-  position:relative;
-  top:1px;
+.mobil {
+  width: 50%;
 }
 
-#vids {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 60px;
-}
 
-#vids a:first-of-type {
-  margin-bottom: 5px;
-}
 
 
 
@@ -104,13 +74,47 @@ line-height: 1.25;
 <body>
 <div class="big-image">
   <div class="overlay">
-    <div class="image-box">
-    <img src="img/tank_om.png">
-    <p>När samhället skakas om och människor förlorar både försörjning och trygghet så behöver vi stå starka. Det är mycket som har förändrats. Att rädda liv, hälsa och ekonomi kräver akuta insatser, och världen efter corona kommer inte vara densamma som innan.</p>
-    <a href="#" class="myButton">Men vi behöver också tänka om.</a>
-  </div>
-  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+           <img src="img/tank_om.png" class="logga">
+            <p>När samhället skakas om och människor förlorar både försörjning och trygghet så behöver vi stå starka. Det är mycket som har förändrats. Att rädda liv, hälsa och ekonomi kräver akuta insatser, och världen efter corona kommer inte vara densamma som innan.</p>
+        </div>
+        <div class="col">
+          <img src="img/mockup.png" class="mobil">
+        </div>
+      </div>
+    </div>
+
 </div>
+</div>
+
+ <div class="container">
+  <!-- Social media -->
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+      <div class="card-body">
+        <p class="text-white m-0"><a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a></p>
+      </div>
+    </div>
+
+    <!-- Heading Row -->
+    <div class="row align-items-center my-5">
+      <div class="col-lg-5">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/demokrati_demo_klimat.jpg" alt="">
+      </div>
+      <!-- /.col-lg-8 -->
+      <div class="col-lg-5">
+        <h1 class="font-weight-light">Business Name or Tagline</h1>
+        <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+        <a class="btn btn-primary" href="#">Call to Action!</a>
+      </div>
+      <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+    
+  </div>
 
 
 
