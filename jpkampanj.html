@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+    body {
+font-family: "MGroena2018 Circular Medium Web",arial,sans-serif;
+color: #2a2a2a;
+font-size: 1em;
+line-height: 1.25;
+}
+
+
+
+.big-image {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("img/gard.jpg");
+}
+
+.big-image-footer {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("img/vattna.jpg");
+}
+
+.gard img {
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: auto;
+    margin-left: 55%;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logga {
+  width: 400px;
+  height: auto;
+  margin: 0 0 20px;
+}
+
+.overlay p {
+  font-family: "MGroena2018 Circular Book Web",arial,sans-serif;
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.5em;
+}
+
+.image-box {
+  width: 400px;
+  margin-left: 30%;
+}
+
+.mobil {
+  width: 50%;
+}
+
+.align-items-left {
+  background-color: #f8f8f8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+    border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.align-items-left p {
+  line-height: 1.5em;
+}
+
+.align-items-left img {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.col-lg-5 {
+  padding-left: 60px;
+}
+
+.rectangle {
+  width: 90%;
+  height: 160px;
+  color: black;
+  border-left: 5px solid #00c554;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #ffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 1s, border-top-right-radius 1s, border-bottom-right-radius 1s, width 0.5s, height 0.5s, border-left 0.5s, background-color 0.5s, color 0.5s;
+}
+
+.rectangle h3 {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+.rectangle i {
+  padding-right: 5px;
+}
+
+.rectangle:hover {
+  width: 100%;
+  height: 165px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-left: 5px solid #00c554;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+li {
+  border-left: 1px solid #00c554;
+  margin-right: 2px;
+  list-style: none;
+}
+
+.framing {
+  background-color: #ffff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  border: 2px solid #00c554;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  color: #ffff;
+  padding: 16px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 24px 2px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  transition: padding 0.5s, background-color 0.5s;
+}
+
+.button:hover {
+  padding: 16px 32px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#ffff; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+
+  </style>
+</head>
+<body>
+<div class="big-image">
+  <div class="gard">
+          <img src="img/mockup.png" class="mobil">
+        </div>
+  <div class="overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+           <img src="img/tank_om.png" class="logga">
+            <p>När samhället skakas om och människor förlorar både försörjning och trygghet så behöver vi stå starka. Det är mycket som har förändrats. Att rädda liv, hälsa och ekonomi kräver akuta insatser, och världen efter corona kommer inte vara densamma som innan.</p>
+        </div>
+        <div class="col">
+          <img src="img/mockup.png" class="mobil">
+        </div>
+      </div>
+    </div>
+
+</div>
+</div>
+
+
+
+<div class="container-fluid">
+  <!-- Social media -->
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+      <div class="card-body">
+        <p class="text-white m-0"><a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a></p>
+      </div>
+    </div>
+
+    <!-- Heading Row -->
+    <div class="row align-items-left my-5">
+      <div class="col-lg-5">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/demokrati_demo_klimat.jpg" alt="">
+      </div>
+
+      <div class="col-lg-5">
+        <div class="framing">
+        <h1 class="font-weight-light">Ett hållbart samhälle</h1>
+        <p>Tänk om vi bygger ett hållbart samhälle. De investeringar vi gör när den mest akuta fasen av coronakrisen är över kommer att avgöra om vi kan rädda både jobben och planetens framtid. Det går att ställa om samhället, men då behöver vi tänka om. Vi ska inte bara bygga tillbaka det som har varit - vi behöver bygga upp något bättre. Med investeringar i klimatsmarta lösningar som drastiskt minskar utsläppen hejdar vi klimatkrisen för våra barn och barnbarns framtid.</p>
+        <div class="rectangle">
+          <h3 class="more-info">Fördjupning</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Aftonbladet debattartikel</li>
+            <li class="list-group-item">mp.se/politik</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="row align-items-left my-5">
+      <div class="col-lg-5">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/aldrevard_hall.jpg" alt="">
+      </div>
+
+      <div class="col-lg-5">
+        <h1 class="font-weight-light">En trygg sjukvård</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+        <div class="rectangle">
+          <h3 class="more-info">Läs mer</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Aftonbladet debattartikel</li>
+            <li class="list-group-item">mp.se/politik</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-left my-5">
+      <div class="col-lg-5">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/vindkraftverk_jobb.jpg" alt="">
+      </div>
+
+      <div class="col-lg-5">
+        <h1 class="font-weight-light">Ett hållbart näringsliv</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+        <div class="rectangle">
+          <h3 class="more-info">Fördjupning</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Aftonbladet debattartikel</li>
+            <li class="list-group-item">mp.se/politik</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+</div>
+
+<div class="big-image-footer">
+  <div class="overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+           
+        </div>
+        <div class="col">
+          <img src="img/tank_om.png" class="logga">
+            <p>För att påverka mer behöver vi bli fler. Genom den här kampanjen vill vi bjuda in fler till den gröna rörelsen och till oss som parti. Tillsammans kan vi göra skillnad.</p>
+            <a href="/bli-medlem" class="button"><h5>Bli medlem</h5></a>
+        </div>
+      </div>
+    </div>
+
+</div>
+</div>
+
+
+
+</body>
+</html>
