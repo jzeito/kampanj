@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -17,6 +18,13 @@ font-size: 1em;
 line-height: 1.25;
 }
 
+body p {
+  font-family: "MGroena2018 Circular Book Web",arial,sans-serif;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: 100;
+}
 
 
 .big-image {
@@ -28,13 +36,22 @@ line-height: 1.25;
   background-image: url("img/gard.jpg");
 }
 
+.big-image-footer {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("img/vattna_wide.jpg");
+}
+
 .overlay {
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   color: white;
   display: flex;
   align-items: center;
@@ -43,16 +60,23 @@ line-height: 1.25;
 }
 
 .logga {
-  width: 400px;
-  height: auto;
-  margin: 0 0 20px;
+  width: 60%;
+  margin-top: 40px;
 }
 
-.overlay p {
+@media only screen and (max-width: 600px) {
+  .logga {
+    width: 60%;
+    margin-top: 60px;
+  }
+}
+
+#header {
   font-family: "MGroena2018 Circular Book Web",arial,sans-serif;
   margin: 0;
   font-size: 19px;
   line-height: 1.5em;
+  color: #ffff;
 }
 
 .image-box {
@@ -60,62 +84,480 @@ line-height: 1.25;
   margin-left: 30%;
 }
 
-.mobil {
-  width: 50%;
+
+.myButton {
+  background-color:#transparent;
+  border: 1px solid #00C554;
+  border-radius:3px;
+  display:inline-block;
+  color:#ffffff;
+  font-size:17px;
+  padding:10px 23px;
+  text-decoration:none;
+  margin-top: 20px;
+}
+.myButton:hover {
+  background-color:#00C554;
+  color: #ffff;
+  text-decoration: none;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+
+.align-items-left {
+  background-color: #f8f8f8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+    border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.align-items-left p {
+  line-height: 1.5em;
+}
+
+.align-items-left img {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .align-items-left {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+
+.rectangle {
+  width: 90%;
+  height: 160px;
+  color: black;
+  border-left: 5px solid #00c554;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #ffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 1s, border-top-right-radius 1s, border-bottom-right-radius 1s, width 0.5s, height 0.5s, border-left 0.5s, background-color 0.5s, color 0.5s;
+}
+
+.rectangle h3 {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+
+.rectangle:hover {
+  width: 100%;
+  height: 165px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-left: 5px solid #00c554;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 
 
+li {
+  border-left: 1px solid #00c554;
+  margin-right: 2px;
+  list-style: none;
+}
 
+
+
+.framing {
+  background-color: #ffff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#ffff; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+p {
+  font-family: "MGroena2018 Circular Medium Web",arial,sans-serif;
+color: #2a2a2a;
+font-size: 1em;
+line-height: 1.25;
+}
+
+.mobil {
+  width: 300px;
+  height: auto;
+}
+
+.membership {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  color: white;
+  border-top: 5px solid #00c554;
+  border-bottom: 5px solid #00c554;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  transition: box-shadow 1s, border-top-right-radius 1s, border-bottom-right-radius 1s, width 0.5s, height 0.5s, border-left 0.5s, background-color 0.5s, color 0.5s;
+}
+
+
+
+.membership h3 {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+
+
+.membership:hover {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.membership .list-group-item {
+  background-color: rgba(255, 255, 255, 0);
+
+}
+
+
+.medlem {
+  color: white;
+  padding-top: 50px;
+}
+
+
+
+.demopadding {
+  margin:50px auto;
+  width:100%;
+  text-align:center;
+}
+.icon {
+  position:relative;
+  text-align:center;
+  width:0px;
+  height:0px;
+  padding:20px;
+  border-top-right-radius:  20px;
+  border-top-left-radius:   20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius:  20px; 
+  -moz-border-radius:     20px 20px 20px 20px;
+  -webkit-border-radius:    20px 20px 20px 20px;
+  -khtml-border-radius:     20px 20px 20px 20px;  
+  color:#FFFFFF;
+}
+.icon i {
+  font-size:20px;
+  position:absolute;
+  left:9px;
+  top:10px;
+}
+.icon.social {
+  float:left;
+  margin:0 5px 0 0;
+  cursor:pointer;
+  background:#00C554 ;
+  color:#262626;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;  
+}
+.icon.social:hover {
+  background:#00C554 ;
+  color:#f8f8f8;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-filter: drop-shadow(0 1px 10px rgba(0,0,0,.8));
+  -moz-filter:  drop-shadow(0 1px 10px rgba(0,0,0,.8));
+  -ms-filter:     drop-shadow(0 1px 10px rgba(0,0,0,.8));
+  -o-filter:    drop-shadow(0 1px 10px rgba(0,0,0,.8));
+  filter:       drop-shadow(0 1px 10px rgba(0,0,0,.8));   
+}
+.icon.social.fb i {
+  left:13px;
+  top:10px;
+}
+.icon.social.tw i {
+  left:11px;
+}
+.icon.social.in i {
+  left:11px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+}
+
+.newsletter {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #00C554;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#footer {
+  color: white !important;
+}
 
 
   </style>
 </head>
 <body>
+
+<!--Top Image-->
 <div class="big-image">
   <div class="overlay">
     <div class="container">
       <div class="row">
-        <div class="col">
-           <img src="img/tank_om.png" class="logga">
-            <p>När samhället skakas om och människor förlorar både försörjning och trygghet så behöver vi stå starka. Det är mycket som har förändrats. Att rädda liv, hälsa och ekonomi kräver akuta insatser, och världen efter corona kommer inte vara densamma som innan.</p>
+        <div class="col-md-7">
+           <img src="https://raw.githubusercontent.com/jzeito/kampanj/master/img/tank_om.png" class="logga">
+            <p id="header">När samhället skakas om och människor förlorar både försörjning och trygghet så behöver vi stå starka. Det är mycket som har förändrats. Att rädda liv, hälsa och ekonomi kräver akuta insatser, och världen efter corona kommer inte vara densamma som innan.Men vi behöver också tänka om. </p>
+            
         </div>
-        <div class="col">
-          <img src="img/mockup.png" class="mobil">
-        </div>
+          <div class="col-md-5 align-self-center">
+            <div class="membership">
+              
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><img src="img/mockup.png" width="170px" align="right"><p class="medlem">Var med och gör skillnad. Bli medlem snabbt via sms.</p></li>
+                <li class="list-group-item">Mer information på mp.se/bli-medlem</li>
+              </ul>
+            </div>
+          </div>
       </div>
     </div>
-
+  
+  </div>
 </div>
-</div>
 
- <div class="container">
+
+
+<!--Body-->
+
+
+
+
+
+
+
+      <!-- Innehåll -->
+<div class="container-fluid">
   <!-- Social media -->
-    <div class="card text-white bg-secondary my-5 py-4 text-center">
-      <div class="card-body">
-        <p class="text-white m-0"><a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a></p>
+    <div class="row2">
+
+          <div class="col-md-7 align-self-center">
+            <div class="newsletter">
+              <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<style type="text/css">
+#mc-embedded-subscribe-form input[type=checkbox]{display: inline; width: auto;margin-right: 10px;}
+#mergeRow-gdpr {margin-top: 20px;}
+#mergeRow-gdpr fieldset label {font-weight: normal;}
+#mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}
+</style>
+<div id="mc_embed_signup">
+<form action="https://www.us19.list-manage.com/subscribe/post?u=e0070a5a019e631a637f87eb7&amp;id=0304adbe0f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+   <div id="mc_embed_signup_scroll">
+<label for="mce-EMAIL">Anmäl dig till vår nyhetsbrev</label>
+<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e0070a5a019e631a637f87eb7_0304adbe0f" tabindex="-1" value=""></div>
+   <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+   </div>
+</form>
+</div>
+
+<!--End mc_embed_signup--> 
+            </div>
+          </div>
       </div>
-    </div>
+</div>
 
     <!-- Heading Row -->
-    <div class="row align-items-center my-5">
-      <div class="col-lg-5">
-        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/demokrati_demo_klimat.jpg" alt="">
+    <div class="row align-items-left my-5">
+      <div class="col-xs-3 col-md-5">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="https://raw.githubusercontent.com/jzeito/kampanj/master/img/demokrati_demo_klimat.jpg" alt="">
       </div>
-      <!-- /.col-lg-8 -->
-      <div class="col-lg-5">
-        <h1 class="font-weight-light">Klimat</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+
+      <div class="col-sm-9 col-md-6">
+        <h1 class="font-weight-light">Ett hållbart samhälle</h1>
+        <p>De investeringar vi gör när den mest akuta fasen av coronakrisen är över kommer att avgöra om vi kan rädda både jobben och planetens framtid. Det går att ställa om samhället, men då behöver vi tänka om. Vi ska inte bara bygga tillbaka det som har varit - vi behöver bygga upp något bättre. Med investeringar i klimatsmarta lösningar som drastiskt minskar utsläppen hejdar vi klimatkrisen för våra barn och barnbarns framtid.</p>
+        <div class="rectangle">
+          <h3 class="more-info">Läs mer</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Aftonbladet debattartikel</li>
+            <li class="list-group-item">mp.se/politik</li>
+          </ul>
+        </div>
       </div>
-      <!-- /.col-md-4 -->
     </div>
-    <!-- /.row -->
 
-    
+    <div class="row align-items-left my-5">
+      <div class="col-xs-3 col-md-5">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="https://raw.githubusercontent.com/jzeito/kampanj/master/img/aldrevard_hall.jpg" alt="">
+      </div>
+
+      <div class="col-sm-9 col-md-6">
+        <h1 class="font-weight-light">En trygg sjukvård</h1>
+        <p>Vem du är, vad du tjänar eller var du kommer ifrån ska aldrig ha betydelse för vilken vård och omsorg du har rätt till. Medicinen du behöver ska finnas på apoteket och vid en global pandemi ska sjukvården både ha skyddsutrustning och en organisation som snabbt kan anpassas. Människorna som arbetar i vården och omsorgen ska inte tackas med applåder, utan med rimliga löner, bra arbetsvillkor och fler kollegor.</p>
+        <div class="rectangle">
+          <h3 class="more-info">Läs mer</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Aftonbladet debattartikel</li>
+            <li class="list-group-item">mp.se/politik</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-left my-5">
+      <div class="col-xs-3 col-md-5">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="https://raw.githubusercontent.com/jzeito/kampanj/master/img/vindkraftverk_jobb.jpg" alt="">
+      </div>
+
+      <div class="col-sm-9 col-md-6">
+        <h1 class="font-weight-light">Ett hållbart näringsliv</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+        <div class="rectangle">
+          <h3 class="more-info">Fördjupning</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Aftonbladet debattartikel</li>
+            <li class="list-group-item">mp.se/politik</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-left my-5">
+      <div class="col-xs-3 col-md-5">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="https://raw.githubusercontent.com/jzeito/kampanj/master/img/aldrevard_hall.jpg" alt="">
+      </div>
+
+      <div class="col-sm-9 col-md-6">
+        <h1 class="font-weight-light">En solidarisk värld</h1>
+        <p>Vem du är, vad du tjänar eller var du kommer ifrån ska aldrig ha betydelse för vilken vård och omsorg du har rätt till. Medicinen du behöver ska finnas på apoteket och vid en global pandemi ska sjukvården både ha skyddsutrustning och en organisation som snabbt kan anpassas. Människorna som arbetar i vården och omsorgen ska inte tackas med applåder, utan med rimliga löner, bra arbetsvillkor och fler kollegor.</p>
+        <div class="rectangle">
+          <h3 class="more-info">Läs mer</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Aftonbladet debattartikel</li>
+            <li class="list-group-item">mp.se/politik</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-left my-5">
+      <div class="col-xs-3 col-md-5">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/demokrati_klyfta_kliv.jpg" alt="">
+      </div>
+      <div class="col-sm-9 col-md-6">
+        <h1 class="font-weight-light">Ett jämlikt samhälle</h1>
+        <p>Tänk om vi bygger ett jämlikt samhälle som ger alla människor rättvisa förutsättningar och möj- ligheter. Jämlika samhällen bygger vi genom att minska klyftorna - inget barn ska behöva växa upp i fattigdom och inga vuxna ska vara förpassade till ett livslångt utanförskap. Coronakrisen har drabbat alla, men de med små ekonomiska marginaler, osäkra och lågavlönade arbeten har en längre väg tillbaka, och det är för dem som samhället ska vara som allra starkast.</p>
+        <div class="rectangle">
+          <h3 class="more-info">Läs mer</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Aftonbladet debattartikel</li>
+            <li class="list-group-item">mp.se/politik</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="row align-items-left my-5">
+      <div class="col-xs-3 col-md-5">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/skog_barn.jpg" alt="">
+      </div>
+     <div class="col-sm-9 col-md-6">
+        <h1 class="font-weight-light">Ett jämställt samhälle</h1>
+        <p>Tänk om vi bygger ett jämställt samhälle. Ett samhälle som ger varje individ verktyg att växa och utvecklas, där inte unkna könsroller och system håller människor tillbaka i att forma sina liv. Ett samhälle är arbeten värderas likvärdigt och kvinnors ges samma möjligheter som män. Tänk om vi bygger ett jämställt samhälle där diskriminering inte accepteras i någon form och där varje människa erkänns för den hen är och väljer att vara.</p>
+        <div class="rectangle">
+          <h3 class="more-info">Läs mer</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Aftonbladet debattartikel</li>
+            <li class="list-group-item">mp.se/politik</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+</div>
+<div class="big-image-footer">
+  <div class="overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+           
+        </div>
+          <div class="col-md-7 align-self-center">
+            <h1 id="footer">Var med och gör skillnad</h1>
+            <p id="header">Miljöpartiet har drivit fram världens mest ambitiösa klimatlag och miljöbudgeten har mer än fördubblats. Men vi vill mer! Klimatet kan inte vänta. Var med och gör skillnad!</p>
+            <button class="button">Bli medlem</button>
+                <div class="socialIcons"><p class="text-white m-0" style="letter-spacing: 1.5rem; color:#00c554; font-size: 40px">
+            <div class='demopadding'>
+              <div class='icon social fb'><i class='fa fa-facebook'></i></div>
+              <div class='icon social tw'><i class='fa fa-twitter'></i></div>
+              <div class='icon social in'><i class='fa fa-instagram'></i></div>
+            </div>  
+    </div> 
+          </div>
+      </div>
+    </div>  
   </div>
-
-
+</div>
 
 
 </body>
